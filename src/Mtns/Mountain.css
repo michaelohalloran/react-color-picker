@@ -1,0 +1,13 @@
+.mountain-card {
+	background-color: lightblue;
+	border: 1px solid black;
+	flex-basis: 20%;
+	margin: 1%;
+	height: 300px;
+	text-align: center;
+}
+
+img {
+	max-width: 200px;
+	height: 150px;
+}

@@ -1,0 +1,27 @@
+.mtn-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.header {
+	width: 100%;
+	text-align: center;
+}
+
+.winner,
+.loser {
+	color: white;
+	font-size: 1.2rem;
+	width: 50%;
+	text-align: center;
+	margin: auto;
+}
+
+.winner {
+	background-color: green;
+}
+
+.loser {
+	background-color: red;
+}
