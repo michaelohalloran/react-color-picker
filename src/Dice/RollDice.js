@@ -23,18 +23,13 @@ class RollDice extends Component {
 	}
 
 	roll = () => {
-		this.setState(
-			{
-				die1Value: this.calcDieValue(),
-				die2Value: this.calcDieValue(),
-				rolling: true
-			},
-			() => {
-				setTimeout(() => {
-					this.setState({ rolling: false });
-				}, 1500);
-			}
-		);
+		this.setState({
+			die1Value: this.calcDieValue(),
+			die2Value: this.calcDieValue(),
+			rolling: true
+		});
+
+		setTimeout(() => this.setState({ rolling: false }), 1000);
 	};
 
 	calcDieValue = () => {
@@ -48,8 +43,8 @@ class RollDice extends Component {
 		return (
 			<div className="roll-container">
 				<div className="dice-container">
-					<Die value={die1Value} />
-					<Die value={die2Value} />
+					<Die value={die1Value} wobbling={this.state.rolling} />
+					<Die value={die2Value} wobbling={this.state.rolling} />
 				</div>
 
 				<button disabled={this.state.rolling} onClick={this.roll}>

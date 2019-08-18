@@ -18,7 +18,10 @@ const Die = (props) => {
 
 	return (
 		<div className="die-container">
-			<i className={`fas fa-dice-${getTextDieValue(value)}`} />
+			<i
+				className={`fas fa-dice-${getTextDieValue(value)} 
+					${props.wobbling ? "wobble-cls" : ""}`}
+			/>
 		</div>
 	);
 };
