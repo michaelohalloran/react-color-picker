@@ -1,0 +1,16 @@
+.die-container {
+	background-color: white;
+	width: 50%;
+	/* padding: 4%; */
+	margin: 3%;
+	height: 150px;
+	width: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 12rem;
+}
+
+i {
+	color: purple;
+}

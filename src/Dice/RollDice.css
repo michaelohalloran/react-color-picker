@@ -1,0 +1,36 @@
+.roll-container {
+	display: flex;
+	background-color: lightslategray;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 100vh;
+}
+
+.dice-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+button {
+	padding: 1.5%;
+	border: none;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	border-radius: 7px;
+	width: 15%;
+	cursor: pointer;
+}
+
+button:disabled,
+button:hover:disabled {
+	background-color: rgba(255, 255, 255, 0.4);
+	cursor: default;
+}
+
+button:hover {
+	background-color: rgba(138, 43, 226, 0.7);
+}
