@@ -1,0 +1,25 @@
+.lotto-container {
+	display: flex;
+	flex-direction: column;
+	/* flex-wrap: wrap; */
+	justify-content: center;
+	align-items: center;
+}
+
+.ball-container {
+	display: flex;
+}
+
+button {
+	margin-top: 3%;
+	border-radius: 50%;
+	background-color: skyblue;
+	color: white;
+	padding: 1em;
+	/* outline: none; */
+	/* width: 16%; */
+	border: none;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 1.3rem;
+}
