@@ -1,0 +1,10 @@
+.todo-container {
+	display: flex;
+	/* justify-content: space-between; */
+	align-items: center;
+	background-color: rgba(240, 52, 52, 0.4);
+}
+
+.todo-container p {
+	margin-right: auto;
+}

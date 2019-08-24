@@ -1,0 +1,32 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: white;
+	background: linear-gradient(to right, skyblue 40%, seagreen 70%, orangered 90%);
+	height: 100vh;
+}
+
+.inner-container {
+	background-color: rgba(240, 52, 52, 1);
+	/* height: 50vh; */
+	/* margin: auto; */
+	padding: 3em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.inner-container hr {
+	width: 100%;
+	margin: 0;
+	margin-top: -10%;
+	/* height: 13px; */
+	background: darkgray;
+}
+
+.inner-container h4 {
+	margin-bottom: 0;
+}
