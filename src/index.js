@@ -6,6 +6,7 @@ import "./index.css";
 // import App from "./Lottery/App";
 // import App from "./Coin/App";
 // import App from "./ColorBoxes/App";
-import App from "./Hangman/App";
+// import App from "./Hangman/App";
+import App from "./Lights/App";
 
 ReactDOM.render(<App />, document.getElementById("root"));

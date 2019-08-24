@@ -1,0 +1,16 @@
+.light {
+	padding: 10px;
+	background-color: black;
+	grid-column: span 1;
+	border: 1px solid black;
+	height: 20px;
+	/* margin: 0.5em; */
+}
+
+.light:hover {
+	cursor: pointer;
+}
+
+.on {
+	background-color: mediumturquoise;
+}
