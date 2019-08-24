@@ -4,8 +4,54 @@
 	height: 25%;
 	align-items: flex-end;
 	justify-content: space-between;
+	position: relative;
 }
+
+/* .copy-container {
+	position: relative;
+} */
 
 .box span {
 	text-transform: uppercase;
+}
+
+.more-btn,
+.copy-btn {
+	color: white;
+	text-transform: uppercase;
+	cursor: pointer;
+	background: rgba(255, 255, 255, 0.3);
+	text-align: center;
+	line-height: 30px;
+	outline: none;
+	border: none;
+	font-size: 1em;
+	height: 30px;
+}
+
+.more-btn {
+	width: 60px;
+}
+.copy-btn {
+	/* align-self: center;  */
+	opacity: 0;
+	width: 100px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -50px;
+	margin-top: -15px;
+	display: inline-block;
+}
+
+.box:hover .copy-btn {
+	opacity: 1;
+	transition: 0.5s;
+}
+
+.show {
+	display: block;
+	position: relative;
+	transform: translate(-50%, -50%);
+	/* align-self: center; */
 }

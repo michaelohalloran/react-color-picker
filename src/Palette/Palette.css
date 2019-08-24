@@ -9,22 +9,3 @@
 	flex-wrap: wrap;
 	height: 90%;
 }
-
-.more-btn,
-.copy-btn {
-	color: white;
-	text-transform: uppercase;
-	cursor: pointer;
-}
-
-.copy-btn {
-	display: none;
-	align-self: center;
-}
-
-.show {
-	display: block;
-	position: relative;
-	transform: translate(-50%, -50%);
-	/* align-self: center; */
-}
