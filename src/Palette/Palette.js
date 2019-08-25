@@ -4,7 +4,6 @@ import ColorBox from "./ColorBox";
 
 class Palette extends Component {
 	constructor(props) {
-		// console.log("seedColors: ", props.palette);
 		super(props);
 		this.state = {
 			colors: props.palette.colors
@@ -20,26 +19,8 @@ class Palette extends Component {
 	};
 
 	render() {
-		// const colors = this.state.colors.map((palette, idx) => {
-		// 	palette.showCopyBtn = palette.showCopyBtn || false;
-		// 	const style = { backgroundColor: palette.color };
-		// 	return (
-		// 		<div
-		// 			key={palette.name}
-		// 			onMouseLeave={() => this.toggleBtn(idx)}
-		// 			onMouseEnter={() => this.toggleBtn(idx)}
-		// 			className="box"
-		// 			style={style}
-		// 		>
-		// 			<span>{palette.name}</span>
-		// 			<button className={`copy-btn ${palette.showCopyBtn && "show"}`}>COPY</button>
-		// 			<button className="more-btn">More</button>
-		// 		</div>
-		// 	);
-		// });
-
-		const colorBoxes = this.state.colors.map((palette, idx) => {
-			return <ColorBox name={palette.name} key={palette.name} background={palette.color} />;
+		const colorBoxes = this.state.colors[300].map((palette, idx) => {
+			return <ColorBox name={palette.name} key={palette.name} background={palette.hex} />;
 		});
 
 		return (
