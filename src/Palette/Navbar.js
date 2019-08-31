@@ -38,7 +38,7 @@ class Navbar extends Component {
 				<div className="slider-container">
 					<span>Level {level}</span>
 				</div>
-				<div class="slider">
+				<div className="slider">
 					<Slider
 						defaultValue={level}
 						min={100}

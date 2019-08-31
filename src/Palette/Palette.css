@@ -2,10 +2,26 @@
 	/* display: flex;
 	flex-wrap: wrap; */
 	height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
 .palette {
 	display: flex;
 	flex-wrap: wrap;
 	height: 90%;
+}
+
+.palette-footer {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 5vh;
+	font-weight: bold;
+	background: white;
+}
+
+.emoji {
+	font-size: 1.5rem;
+	margin: 0 1rem;
 }
