@@ -4,23 +4,31 @@ import "rc-slider/assets/index.css";
 import "./Navbar.css";
 import MenuItem from "@material-ui/core/MenuItem";
 import Select from "@material-ui/core/Select";
+import Snackbar from "@material-ui/core/Snackbar";
+import IconButton from "@material-ui/core/IconButton";
+import CloseIcon from "@material-ui/icons/Close";
 
 class Navbar extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			format: "hex"
+			format: "hex",
+			open: false
 		};
 	}
 
 	handleChange = (e) => {
-		this.setState({ format: e.target.value });
+		this.setState({ format: e.target.value, open: true });
 		this.props.handleChange(e.target.value);
+	};
+
+	closeSnackbar = (e, reason) => {
+		this.setState({ open: false });
 	};
 
 	render() {
 		const { level, changeLevel, colorFormat, handleChange } = this.props;
-		const { format } = this.state;
+		const { format, open } = this.state;
 
 		return (
 			<header className="navbar">
@@ -54,6 +62,24 @@ class Navbar extends Component {
 						<MenuItem value="rgba">RGBA - rgba 255, 255, 255, 1.0</MenuItem>
 					</Select>
 				</div>
+				<Snackbar
+					anchorOrigin={{
+						vertical: "bottom",
+						horizontal: "left"
+					}}
+					open={open}
+					autoHideDuration={3000}
+					onClose={this.closeSnackbar}
+					ContentProps={{
+						"aria-describedby": "message-id"
+					}}
+					message={<span id="message-id">Format changed to {format}</span>}
+					action={[
+						<IconButton key="close" aria-label="close" color="inherit" onClick={this.closeSnackbar}>
+							<CloseIcon />
+						</IconButton>
+					]}
+				/>
 			</header>
 		);
 	}

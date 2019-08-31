@@ -26,6 +26,11 @@
 	color: black;
 	text-decoration: none;
 }
+
+.select-container {
+	margin-left: auto;
+}
+
 /* .rc-slider-track {
 	background-color: transparent;
 }
