@@ -1,13 +1,6 @@
 .palette-list-container {
-	display: flex;
+	/* display: flex; */
 	/* flex-direction: column; */
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
 	/* flex-basis: 35%; */
-}
-
-.single-palette {
-	display: flex;
-	flex-wrap: wrap;
-	flex-basis: 20%;
-	margin: 2%;
 }
