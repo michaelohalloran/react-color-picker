@@ -36,7 +36,6 @@ const styles = {
 
 const PaletteList = (props) => {
 	const { paletteList, classes } = props;
-	console.log("props: ", props);
 
 	function goToPalette(id) {
 		props.history.push(`/palette/${id}`);
