@@ -1,10 +1,13 @@
 .box {
 	display: flex;
 	width: 20%;
-	/* height: 25%; */
 	align-items: flex-end;
 	justify-content: space-between;
-	/* position: relative; */
+	position: relative;
+}
+
+.single-palette > .box {
+	height: 50%;
 }
 
 .box:hover {
@@ -73,7 +76,8 @@
 }
 
 .more-btn,
-.copy-btn {
+.copy-btn,
+.back-btn > a {
 	color: white;
 	text-transform: uppercase;
 	cursor: pointer;
@@ -84,21 +88,39 @@
 	border: none;
 	font-size: 1em;
 	height: 30px;
+	width: 100px;
+}
+
+.back-btn a {
+	color: white;
 }
 
 .more-btn {
 	width: 60px;
 }
 .copy-btn {
-	align-self: center;
-	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	width: 100px;
+	/* align-self: center; */
 	/* position: absolute; */
 	/* top: 50%;
 	left: 50%;
 	margin-left: -50px;
 	margin-top: -15px;
 	display: inline-block; */
+}
+
+.box.back-btn {
+	background: black;
+	justify-content: center;
+	align-items: center;
+}
+
+.copy-btn {
+	opacity: 0;
 }
 
 .box:hover .copy-btn {
